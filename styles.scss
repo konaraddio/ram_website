@@ -42,12 +42,17 @@ $family-secondary: "Bitter", serif;
     font-family: $family-secondary;
 }
 
-.footer {
-    background-color: $dark;
+.upper{
+    text-transform: uppercase;
 }
 
-footer {
-    height: 75px;
+#footer {
+    a{
+        color: $primary;
+        &:hover{
+            color: $light;
+        }
+    }
 }
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {

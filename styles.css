@@ -2201,11 +2201,13 @@ a.nav-item {
 .subtitle {
   font-family: "Bitter", serif; }
 
-.footer {
-  background-color: #363636; }
+.upper {
+  text-transform: uppercase; }
 
-footer {
-  height: 75px; }
+#footer a {
+  color: #EF4836; }
+  #footer a:hover {
+    color: whitesmoke; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing {
