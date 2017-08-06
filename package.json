@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "sass": "sass styles.scss styles.css --sourcemap=none",
+    "minify": "minify styles.css",
+    "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'",
+    "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1"
+  },
+  "name": "ram_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.4.2"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

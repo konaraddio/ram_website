@@ -1,0 +1,136 @@
+@import "./node_modules/bulma/sass/utilities/initial-variables";
+$orange: #EC644B;
+$blue: #446CB3;
+$red: #EF4836;
+$dark: #363636;
+$primary: $red;
+/*Font linked in <head> of html pages*/
+$family-primary: "Quicksand", sans-serif;
+$family-secondary: "Bitter", serif;
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+
+@import "./node_modules/bulma/sass/base/_all.sass";
+
+@import "./node_modules/bulma/sass/elements/button.sass";
+@import "./node_modules/bulma/sass/elements/image.sass";
+@import "./node_modules/bulma/sass/elements/other.sass";
+@import "./node_modules/bulma/sass/elements/title.sass";
+
+/*@import "./node_modules/bulma/sass/grid/_all.sass";*/
+
+@import "./node_modules/bulma/sass/components/nav.sass";
+@import "./node_modules/bulma/sass/components/tabs.sass";
+
+@import "./node_modules/bulma/sass/layout/_all.sass";
+
+.nav {
+    height: 75px;
+
+    .nav-menu {
+        text-transform: uppercase;
+    }
+
+    /*The below keeps the hamburge menu centered (displayed on mobile layout)*/
+    .nav-toggle{
+        margin: auto;
+        /*The below increases the hit area*/
+        height: 100%;
+    }
+}
+
+.subtitle{
+    font-family: $family-secondary;
+}
+
+.footer {
+    background-color: $dark;
+}
+
+footer {
+    height: 75px;
+}
+/*The below is for the Landing (i.e. Home / Game+About) Page only*/
+#landing {
+
+    /*The below is used to keep elements from being too wide on desktop (particularly text)*/
+    .desktop-width-limited{
+        @include desktop{
+            .container{
+                width: 48%;
+            }
+        }
+    }
+
+    .hero-head{
+        .title{
+            text-transform: uppercase;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+    }
+
+    #club-section{
+
+        &.columns{ /* For the grid making up the entirety of the game section */
+            margin-bottom: 0px;
+        }
+
+        #club-join-sponsor {
+            .hero-body {
+                background-image: url("./assets/landingpage_background.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-attachment: fixed;
+            }
+        }
+
+        #club-info{
+            a{
+                color: $primary;
+            }
+        }
+    }
+
+    #about{
+
+        .hero-body{
+
+            .title{
+                /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
+                Note that "1n" is used instead of "n" in order to support old Android browsers.*/
+                &.is-spaced:nth-child(1n+2){
+                    margin-top: 50px;
+                }
+            }
+
+            .video{
+                margin-top: 50px;
+                iframe{
+                    width: 100%;
+
+                    @include mobile{/* < 768px width*/
+                        height: 432px;
+
+                        @media screen and (max-width: 480px){/* special case for most mobile devices */
+                            height: 240px;
+                        }
+                    }
+
+                    @include tablet-only{/* from 769px until 999px width */
+                        height: 480px;
+                    }
+
+                    @include desktop{/* >= 1192px width*/
+                        height: 512px;
+                    }
+
+                }
+            }
+
+
+        }
+
+    }
+}
+

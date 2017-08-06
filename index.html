@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Robotics @ Maryland</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="./styles.min.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EF4836" />
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The home page for Robotics @ Maryland." />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500|Bitter">
+
+    <!--Font awesome icons loaded before </body> tag-->
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+    </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function(){
+            $('.nav').load('./html/navigation_bar.html', function(){
+                $('#ram-home-logo').addClass('is-active');
+
+                <!--Change the links because index.html has a slightly different file path-->
+                $('#ram-home-logo').attr('href', './index.html');
+                $('#ram-home-logo img').attr('src', './assets/logo.png');
+                $('#team-tab').attr('href', './html/team_page.html');
+                $('#robot-tab').attr('href', './html/robot_page.html');
+                $('#sponsors-tab').attr('href', './html/sponsors_page.html');
+            });
+        });
+    </script>
+
+    <!--This is for everything inside the Landing Page, excluding the navbar & footer-->
+    <div id="landing">
+
+        <div id="club-section">
+
+                <section id="club-join-sponsor" class="hero is-dark is-bold is-fullheight">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <p class="title is-1 is-spaced">
+                                Robotics @ Maryland
+                            </p>
+                            <a class="button is-large is-primary">
+                                Join Us
+                            </a>
+                            <a class="button is-large is-primary is-inverted">
+                                Sponsor 
+                            </a>
+                            <p><br/></p>
+                            <p class="subtitle is-3 is-spaced">
+                                WXYZ 0123
+                                <br/>
+                                Somedays
+                                <br/>
+                                42:00PM - 43:00PM
+                            </p>
+                        </div>
+                    </div>
+                </section>
+        </div>
+
+        <!--Section dedicated towards the About Section-->
+        <section id="about" class="hero is-primary">
+
+            <div class="hero-head">
+                <div class="container has-text-centered">
+                    <p class="title is-1">
+                        About
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-body desktop-width-limited">
+                <div class="container">
+
+                    <h1 class="title is-3 is-spaced">
+                        What is Robotics @ Maryland?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non mi faucibus nulla porta convallis. Pellentesque eleifend lacinia accumsan. Vivamus non lectus eu ipsum venenatis semper. Fusce sit amet tincidunt nibh, commodo suscipit sapien. Curabitur ultrices non libero ut maximus. Nunc volutpat finibus mattis. Duis nec bibendum lacus, eget aliquet libero. In tempus felis in mi semper ullamcorper. In bibendum, magna nec suscipit imperdiet, ex est lacinia magna, nec imperdiet risus lacus nec enim. Donec mollis magna et purus porttitor imperdiet. Integer posuere, arcu a condimentum ultrices, velit urna euismod nunc, ac congue erat arcu nec sapien. Sed augue nunc, fermentum lobortis laoreet id, cursus quis risus. 
+                    </h2>
+
+                    <h1 class="title is-3 is-spaced">
+                        Why Robotics @ Maryland?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non mi faucibus nulla porta convallis. Pellentesque eleifend lacinia accumsan. Vivamus non lectus eu ipsum venenatis semper. Fusce sit amet tincidunt nibh, commodo suscipit sapien. Curabitur ultrices non libero ut maximus. Nunc volutpat finibus mattis. Duis nec bibendum lacus, eget aliquet libero. In tempus felis in mi semper ullamcorper. In bibendum, magna nec suscipit imperdiet, ex est lacinia magna, nec imperdiet risus lacus nec enim. Donec mollis magna et purus porttitor imperdiet. Integer posuere, arcu a condimentum ultrices, velit urna euismod nunc, ac congue erat arcu nec sapien. Sed augue nunc, fermentum lobortis laoreet id, cursus quis risus. 
+                    </h2>
+
+                    <h1 class="title is-3 is-spaced">
+                        Who is this for?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non mi faucibus nulla porta convallis. Pellentesque eleifend lacinia accumsan. Vivamus non lectus eu ipsum venenatis semper. Fusce sit amet tincidunt nibh, commodo suscipit sapien. Curabitur ultrices non libero ut maximus. Nunc volutpat finibus mattis. Duis nec bibendum lacus, eget aliquet libero. In tempus felis in mi semper ullamcorper. In bibendum, magna nec suscipit imperdiet, ex est lacinia magna, nec imperdiet risus lacus nec enim. Donec mollis magna et purus porttitor imperdiet. Integer posuere, arcu a condimentum ultrices, velit urna euismod nunc, ac congue erat arcu nec sapien. Sed augue nunc, fermentum lobortis laoreet id, cursus quis risus. 
+                    </h2>
+
+                    <!--About video-->
+                    <div class="has-text-centered video">
+                        <iframe frameborder="0" scrolling="no" src="http://www.youtube.com/embed/1-3Oyxo6MLw"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    
+        <!--Section dedicated towards Our Sponsors-->
+        <section id="sponsors" class="hero is-light">
+            <div class="hero-head">
+                <div class="container has-text-centered">
+                    <p class="title is-1">
+                        Thank you
+                        <br class="is-hidden-tablet"/>
+                        to our
+                        <br class="is-hidden-tablet"/>
+                        Sponsors.
+                    </p>
+                    <p class="subtitle is-3">
+                        We couldn't have done it without them.
+                    </p>
+                </div>
+            </div>
+             <div class="hero-body desktop-width-limited">
+                <div class="container has-text-centered">
+                    <img src="./assets/sponsors.png" alt="Our Past Sponsors">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above and other scripts-->
+    <script>
+        $(function() {
+            $('#footer').load('./html/footer.html');
+        });
+    </script>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+</body>
+
+</html>
