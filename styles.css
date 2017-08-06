@@ -2201,8 +2201,17 @@ a.nav-item {
 .subtitle {
   font-family: "Bitter", serif; }
 
+.hero-head .title {
+  margin-top: 100px;
+  margin-bottom: 50px; }
+
 .upper {
   text-transform: uppercase; }
+
+/*The below is used to keep elements from being too wide on desktop (particularly text)*/
+@media screen and (min-width: 1000px) {
+  .desktop-width-limited .container {
+    width: 48%; } }
 
 #footer a {
   color: #EF4836; }
@@ -2210,49 +2219,45 @@ a.nav-item {
     color: whitesmoke; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
-#landing {
-  /*The below is used to keep elements from being too wide on desktop (particularly text)*/ }
-  @media screen and (min-width: 1000px) {
-    #landing .desktop-width-limited .container {
-      width: 48%; } }
-  #landing .hero-head .title {
-    text-transform: uppercase;
-    margin-top: 100px;
-    margin-bottom: 50px; }
-  #landing #club-section.columns {
-    /* For the grid making up the entirety of the game section */
-    margin-bottom: 0px; }
-  #landing #club-section #club-join-sponsor .hero-body {
-    background-image: url("./assets/landingpage_background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-attachment: fixed; }
-  #landing #club-section #club-info a {
-    color: #EF4836; }
-  #landing #about .hero-body .title {
-    /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
-    Note that "1n" is used instead of "n" in order to support old Android browsers.*/ }
-    #landing #about .hero-body .title.is-spaced:nth-child(1n+2) {
-      margin-top: 50px; }
-  #landing #about .hero-body .video {
+#landing-page #club-section.columns {
+  /* For the grid making up the entirety of the game section */
+  margin-bottom: 0px; }
+#landing-page #club-section #club-join-sponsor .hero-body {
+  background-image: url("./assets/landingpage_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed; }
+#landing-page #club-section #club-info a {
+  color: #EF4836; }
+#landing-page #about .hero-body .title {
+  /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
+  Note that "1n" is used instead of "n" in order to support old Android browsers.*/ }
+  #landing-page #about .hero-body .title.is-spaced:nth-child(1n+2) {
     margin-top: 50px; }
-    #landing #about .hero-body .video iframe {
-      width: 100%; }
-      @media screen and (max-width: 768px) {
-        #landing #about .hero-body .video iframe {
-          /* < 768px width*/
-          height: 432px; } }
+#landing-page #about .hero-body .video {
+  margin-top: 50px; }
+  #landing-page #about .hero-body .video iframe {
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      #landing-page #about .hero-body .video iframe {
+        /* < 768px width*/
+        height: 432px; } }
   @media screen and (max-width: 768px) and (max-width: 480px) {
-    #landing #about .hero-body .video iframe {
+    #landing-page #about .hero-body .video iframe {
       /* special case for most mobile devices */
       height: 240px; } }
 
-      @media screen and (min-width: 769px) and (max-width: 999px) {
-        #landing #about .hero-body .video iframe {
-          /* from 769px until 999px width */
-          height: 480px; } }
-      @media screen and (min-width: 1000px) {
-        #landing #about .hero-body .video iframe {
-          /* >= 1192px width*/
-          height: 512px; } }
+    @media screen and (min-width: 769px) and (max-width: 999px) {
+      #landing-page #about .hero-body .video iframe {
+        /* from 769px until 999px width */
+        height: 480px; } }
+    @media screen and (min-width: 1000px) {
+      #landing-page #about .hero-body .video iframe {
+        /* >= 1192px width*/
+        height: 512px; } }
+
+#sponsors-page a {
+  color: #EF4836 !important; }
+  #sponsors-page a:hover {
+    color: #363636 !important; }

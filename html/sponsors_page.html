@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Robotics at Maryland</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="../styles.min.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EF4836" />
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The home page for Robotics @ Maryland." />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500|Bitter">
+
+    <!--Font awesome icons loaded before </body> tag-->
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+    </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function(){
+            $('.nav').load('./navigation_bar.html', function(){
+                $('#sponsors-tab').addClass('is-active');
+            });
+        });
+    </script>
+
+    <!--This is for everything inside the Sponsor Page, excluding the navbar & footer-->
+    <div id="sponsors-page">
+    
+        <!--Section dedicated towards Our Sponsors-->
+        <section id="sponsors" class="hero is-light">
+            <div class="hero-head desktop-width-limited">
+                <div class="container has-text-centered">
+                   <p class="title is-1 upper">
+                        Become a
+                        <br class="is-hidden-tablet"/>
+                        Sponsor
+                    </p>
+                    <p class="subtitle is-3">
+                        Please check out our <a href="../404.html">Sponsor Packet</a>
+                        <br class="is-hidden-touch"/>
+                        and <a href="../404.html">contact us</a>.
+                    </p>
+                    <p class="subtitle is-7">
+                        Gifts in support of the University of Maryland are accepted and managed by the University of Maryland College Park Foundation, Inc. an affiliated 501(c)(3) organization authorized by the Board of Regents. 
+                        Contributions to the University of Maryland are tax deductible as allowed by law.  
+                        Please see your tax advisor for more details.                   
+                    </p>
+                </div>
+            </div>
+             <div class="hero-body desktop-width-limited">
+                <div class="container has-text-centered">
+                    <p class="title is-1 is-spaced upper">
+                        Thank you
+                        <br class="is-hidden-tablet"/>
+                        to our
+                        <br class="is-hidden-tablet"/>
+                        Sponsors
+                    </p>
+                    <p class="subtitle is-3">
+                        Our team, for all its accomplishments, could not compete without the generous support of our sponsors.
+                    </p>
+                    <img src="../assets/sponsors.png" alt="Our Past Sponsors">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above and other scripts-->
+    <script>
+        $(function() {
+            $('#footer').load('./footer.html');
+        });
+    </script>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+</body>
+
+</html>
