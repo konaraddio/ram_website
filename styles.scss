@@ -5,7 +5,7 @@ $red: #EF4836;
 $dark: #363636;
 $primary: $red;
 /*Font linked in <head> of html pages*/
-$family-primary: "Quicksand", sans-serif;
+$family-primary: "Oswald", sans-serif;
 $family-secondary: "Bitter", serif;
 @import "./node_modules/bulma/sass/utilities/_all.sass";
 
@@ -42,6 +42,15 @@ $family-secondary: "Bitter", serif;
     font-family: $family-secondary;
 }
 
+.primary-link{
+    a{
+        color: $primary;
+        &:hover{
+            color: $dark;
+        }
+    }
+}
+
 .hero-head{
     .title{
         margin-top: 100px;
@@ -62,14 +71,13 @@ $family-secondary: "Bitter", serif;
     }
 }
 
-#footer {
-    a{
-        color: $primary;
-        &:hover{
-            color: $light;
-        }
+#footer{
+    @extend .primary-link;
+    a:hover{
+        color: $light;
     }
 }
+
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing-page {
 
@@ -86,12 +94,6 @@ $family-secondary: "Bitter", serif;
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
                 background-attachment: fixed;
-            }
-        }
-
-        #club-info{
-            a{
-                color: $primary;
             }
         }
     }
@@ -136,13 +138,12 @@ $family-secondary: "Bitter", serif;
         }
 
     }
+
+    #sponsors{
+        @extend .primary-link;
+    }
 }
 
 #sponsors-page{
-    a{
-        color: $primary !important;
-        &:hover{
-            color: $dark !important;
-        }
-    }
+    @extend .primary-link;
 }

@@ -101,7 +101,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Quicksand", sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 code,
 pre {
@@ -2201,6 +2201,11 @@ a.nav-item {
 .subtitle {
   font-family: "Bitter", serif; }
 
+.primary-link a, #footer a, #landing-page #sponsors a, #sponsors-page a {
+  color: #EF4836; }
+  .primary-link a:hover, #footer a:hover, #landing-page #sponsors a:hover, #sponsors-page a:hover {
+    color: #363636; }
+
 .hero-head .title {
   margin-top: 100px;
   margin-bottom: 50px; }
@@ -2213,10 +2218,8 @@ a.nav-item {
   .desktop-width-limited .container {
     width: 48%; } }
 
-#footer a {
-  color: #EF4836; }
-  #footer a:hover {
-    color: whitesmoke; }
+#footer a:hover {
+  color: whitesmoke; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing-page #club-section.columns {
@@ -2228,8 +2231,6 @@ a.nav-item {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed; }
-#landing-page #club-section #club-info a {
-  color: #EF4836; }
 #landing-page #about .hero-body .title {
   /*The nth-child(1n+2) below is so the margin top only applies to elements after the first.
   Note that "1n" is used instead of "n" in order to support old Android browsers.*/ }
@@ -2256,8 +2257,3 @@ a.nav-item {
       #landing-page #about .hero-body .video iframe {
         /* >= 1192px width*/
         height: 512px; } }
-
-#sponsors-page a {
-  color: #EF4836 !important; }
-  #sponsors-page a:hover {
-    color: #363636 !important; }

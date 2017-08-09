@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="The sponsors page for Robotics @ Maryland." />
     <!--Google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500|Bitter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Bitter">
 
     <!--Font awesome icons loaded before </body> tag-->
 
@@ -35,9 +35,10 @@
                 <!--Change the links because index.html has a slightly different file path-->
                 $('#ram-home-logo').attr('href', './index.html');
                 $('#ram-home-logo img').attr('src', './assets/logo.png');
-                $('#team-tab').attr('href', './html/team_page.html');
-                $('#robot-tab').attr('href', './html/robot_page.html');
-                $('#sponsors-tab').attr('href', './html/sponsors_page.html');
+                $('#about-tab').attr('href', './html/about_page.html');
+                $('#robots-tab').attr('href', './html/robots_page.html');
+                $('#competition-tab').attr('href', './html/competition_page.html');
+                $('#resources-tab').attr('href', './html/resources_page.html');
             });
         });
     </script>
@@ -52,17 +53,17 @@
                         <div class="container has-text-centered">
                             <img class="is-hidden-touch" src="./assets/logo.png" alt="Logo">
                             <img class="is-hidden-desktop" src="./assets/small_logo.png" alt="Logo">
-                            <p class="title is-1 is-spaced upper">
+                            <h1 class="title is-1 is-spaced upper">
                                 Robotics
                                 <br class="is-hidden-tablet"/>
                                 At
                                 <br class="is-hidden-tablet"/> 
                                 Maryland
-                            </p>
-                            <a class="button is-large is-primary" href="">
+                            </h1>
+                            <a class="button is-large is-primary upper" href="">
                                 Join Us
                             </a>
-                            <a class="button is-large is-primary is-inverted" href="./html/sponsors_page.html">
+                            <a class="button is-large is-primary is-inverted upper" href="./html/sponsors_page.html">
                                 Sponsor 
                             </a>
                             <p><br/></p>
@@ -134,9 +135,11 @@
                         Sponsors
                     </p>
                     <p class="subtitle is-3">
-                        We couldn't have done it without the generous
-                        support of our sponsors.
+                        Our team, for all its accomplishments, could not compete without the generous support of our sponsors.
                     </p>
+                    <a class="subtitle is-3" href="./html/sponsors_page.html">
+                        Learn how you can become a sponsor today.
+                    </a>
                 </div>
             </div>
              <div class="hero-body desktop-width-limited">
