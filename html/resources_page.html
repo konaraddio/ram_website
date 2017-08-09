@@ -32,7 +32,9 @@
     <!--Loading the Navigation Bar above-->
     <script>
         $(function() {
-            $('.nav').load('./navigation_bar.html');
+            $('.nav').load('./navigation_bar.html', function(){
+                $('#resources-tab').addClass('is-active');
+            });
         });
     </script>
 
