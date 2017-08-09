@@ -6,20 +6,24 @@ $dark: #363636;
 $primary: $red;
 /*Font linked in <head> of html pages*/
 $family-primary: "Oswald", sans-serif;
-$family-secondary: "Bitter", serif;
+$family-secondary: "Open Sans", serif;
 @import "./node_modules/bulma/sass/utilities/_all.sass";
 
 @import "./node_modules/bulma/sass/base/_all.sass";
 
+@import "./node_modules/bulma/sass/elements/box.sass";
 @import "./node_modules/bulma/sass/elements/button.sass";
+@import "./node_modules/bulma/sass/elements/content.sass";
 @import "./node_modules/bulma/sass/elements/image.sass";
 @import "./node_modules/bulma/sass/elements/other.sass";
+@import "./node_modules/bulma/sass/elements/tag.sass";
 @import "./node_modules/bulma/sass/elements/title.sass";
 
-/*@import "./node_modules/bulma/sass/grid/_all.sass";*/
+@import "./node_modules/bulma/sass/grid/columns.sass";
 
 @import "./node_modules/bulma/sass/components/nav.sass";
 @import "./node_modules/bulma/sass/components/tabs.sass";
+@import "./node_modules/bulma/sass/components/menu.sass";
 
 @import "./node_modules/bulma/sass/layout/_all.sass";
 
@@ -146,4 +150,48 @@ $family-secondary: "Bitter", serif;
 
 #sponsors-page{
     @extend .primary-link;
+}
+
+/*The below is for the Resources Page only*/
+#resources-page {
+
+    a{
+        font-family: $family-secondary;
+    }
+
+    .columns{
+        padding: 32px;
+
+        @include mobile{
+            padding: 4px;
+        }
+
+        #resource-cards{
+            #category-tags{
+                span.tag{
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        .resource-card{
+            .title, .subtitle, p, blockquote, span{
+                font-family: $family-secondary;
+            }
+
+            margin: 32px;
+
+            @include mobile{
+                margin: 4px;
+                margin-top: 16px;
+            }
+
+        }
+
+    }
+
+    #category-tags span{
+        margin-bottom: 5px;
+    }
+
 }

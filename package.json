@@ -2,7 +2,7 @@
   "scripts": {
     "sass": "sass styles.scss styles.css --sourcemap=none",
     "minify": "minify styles.css",
-    "build-resources": "echo 'you didn't set this up yet'",
+    "build": "./build.sh",
     "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'",
     "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1"
   },

@@ -5,7 +5,7 @@
     <title>Robotics at Maryland</title>
 
     <!--Linking the css file (generated using sass and Bulma)-->
-    <link rel="stylesheet" type="text/css" href="./styles.min.css" />
+    <link rel="stylesheet" type="text/css" href="../styles.min.css" />
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Colors the URL bar in Chrome on mobile only-->
@@ -14,8 +14,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="The sponsors page for Robotics @ Maryland." />
     <!--Google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Bitter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
+
+    <!--functionality for resource card category links-->
+    <script defer type="text/javascript" src="../js/resources_page.min.js"></script>
 
     <!--Font awesome icons loaded before </body> tag-->
 
 </head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+    </nav>
+
+    <!--Loading the Navigation Bar above-->
+    <script>
+        $(function() {
+            $('.nav').load('./navigation_bar.html');
+        });
+    </script>
+
+     <!--This is for the Resources Page-->
+    <div id="resources-page">
+
+        <!--Banner at Top-->
+        <section class="hero is-dark">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1 is-spaced upper">
+                        Helpful Resources
+                    </h1>
+                    <h2 class="subtitle">
+                        What the Robotics At Maryland's subteams use in their work.
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        The "section" fixes the horizontal padding that occurs on mobile/tablet.
+        Note that this also adds padding.
+        -->
+        <div class="section">
+
+            <!--categories on the left and cards on the right-->
+            <div class="columns">
+
+                <!--Categories-->
+                <div id="categories" class="column is-narrow">
+                        <aside class="menu">
+                            <p class="menu-label">
+                                Resources
+                            </p>
+                            <ul class="menu-list">
+                                <li><a class="category-link is-active">All</a></li>
+                                <li><a class="category-link">Mechanical</a></li>
+                                <li><a class="category-link">Electronics</a></li>
+                                <li><a class="category-link">Software</a></li>
+                                <li><a class="category-link">Controls</a></li>
+                                <li><a class="category-link">New Members</a>
+                                    <ul>
+                                        <li><a class="category-link">Lorem</a></li>
+                                        <li><a class="category-link">Ipsum</a></li>
+                                        <li><a class="category-link">Bueno</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </aside>
+                </div>
+
+                <!--Resource Cards-->
+                <div id="resource-cards" class="column">
+
+                </div>
+                <script>
+                    $(function(){
+                        $('#resource-cards').load('./resources_cards_list.html');
+                    });
+                </script>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above and other scripts-->
+    <script>
+        $(function() {
+            $('#footer').load('./footer.html');
+        });
+    </script>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+</body>
+
+</html>
