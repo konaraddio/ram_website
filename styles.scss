@@ -101,11 +101,31 @@ $family-secondary: "Open Sans", serif;
 
         #club-join-sponsor {
             .hero-body {
-                background-image: url("./assets/landingpage_background.jpg");
+                background-image: url("./assets/landingpage/qubo_in_pool.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
                 background-attachment: fixed;
+
+                /*Change images*/
+                -webkit-animation: background 32s infinite;
+                animation: background 32s infinite;  
+                -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
+                animation-delay: 5s;
+            }
+
+            @-webkit-keyframes background {
+                0% { background-image: url("./assets/landingpage/qubo_in_pool.jpg"); }
+                33% { background-image: url("./assets/landingpage/qubo_robot.jpg"); }  
+                67% { background-image: url("./assets/landingpage/tortuga_robot.jpg"); }
+                100% { background-image: url("./assets/landingpage/qubo_in_pool.jpg"); }
+            }
+
+            @keyframes background {
+                0% { background-image: url("./assets/landingpage/qubo_in_pool.jpg"); }
+                33% { background-image: url("./assets/landingpage/qubo_robot.jpg"); }  
+                67% { background-image: url("./assets/landingpage/tortuga_robot.jpg"); }
+                100% { background-image: url("./assets/landingpage/qubo_in_pool.jpg"); }
             }
         }
     }

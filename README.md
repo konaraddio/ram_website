@@ -1,5 +1,5 @@
 # Robotics @ Maryland Website
 
-The website for Robotics @ Maryland.
+http://ramwebsite.surge.sh/
 
-**To be finished in Fall 2017**
+Using Surge for deployment until development is finished.

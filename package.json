@@ -4,7 +4,8 @@
     "minify": "minify styles.css",
     "build": "./build.sh",
     "test": "echo 'testing npm run to see if it's working and, if u see this, it's working'",
-    "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1"
+    "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1",
+    "deploy": "surge --domain ramwebsite.surge.sh"
   },
   "name": "ram_website",
   "version": "1.0.0",
