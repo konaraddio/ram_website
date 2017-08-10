@@ -166,6 +166,25 @@ $family-secondary: "Open Sans", serif;
     @extend .primary-link;
 }
 
+#robots-page{
+    #qubo-image{
+        background-image: url("../assets/qubo_robot.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    #tortuga-image{
+        background-image: url("../assets/tortuga_robot.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    .button{
+        width: 100%;
+        min-height: 128px;
+    }
+}
+
 /*The below is for the Resources Page only*/
 #resources-page {
 

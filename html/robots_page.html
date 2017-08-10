@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Robotics at Maryland</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="../styles.min.css" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EF4836" />
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The sponsors page for Robotics @ Maryland." />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
+
+    <!--Font awesome icons loaded before </body> tag-->
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+    </nav>
+
+    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
+    <script>
+        $(function(){
+            $('.nav').load('./navigation_bar.html', function(){
+                $('#robots-tab').addClass('is-active');
+            });
+        });
+    </script>
+
+    <!--This is for everything inside the Robots Page, excluding the navbar & footer-->
+    <div id="robots-page">
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1 is-spaced upper">
+                        Our Robots
+                    </h1>
+                    <h2 class="subtitle is-5">
+                        Learn more about Qubo and Tortuga
+                    </h2>
+                </div>
+            </div>
+        </section> 
+        <section class="section">
+            <div class="columns has-text-centered">
+                <div class="column qubo-section">
+                    <figure class="image is-2by1">
+                        <img id="qubo-image">
+                    </figure>
+                    <a class="button is-large is-primary is-outlined title is-1">
+                        Qubo
+                    </a>
+                </div>
+                <div class="column tortuga-section"> 
+                    <figure class="image is-2by1">
+                        <img id="tortuga-image">
+                    </figure> 
+                    <a class="button is-large is-primary is-outlined title is-1">
+                        Tortuga
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--Footer-->
+    <div id="footer">
+    </div>
+
+    <!--Loading the Footer above and other scripts-->
+    <script>
+        $(function() {
+            $('#footer').load('./footer.html');
+        });
+    </script>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+</body>
+
+</html>

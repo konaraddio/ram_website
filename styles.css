@@ -2966,6 +2966,20 @@ a.nav-item {
 #landing-page #team .team-member {
   margin-bottom: 32px; }
 
+#robots-page #qubo-image {
+  background-image: url("../assets/qubo_robot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+#robots-page #tortuga-image {
+  background-image: url("../assets/tortuga_robot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+#robots-page .button {
+  width: 100%;
+  min-height: 128px; }
+
 /*The below is for the Resources Page only*/
 #resources-page a {
   font-family: "Open Sans", serif; }

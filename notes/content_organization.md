@@ -14,7 +14,7 @@
        * designs
        * how it works
        * images and videos
-   * Tortuga
+   * Tortuga (previous robot)
        * designs
        * how it works
        * images and videos
@@ -28,7 +28,7 @@
 
 Home | New Members | Sponsors | Competition | Robots | Resources | About
 | --- | --- | --- | --- | --- | --- | --- |
-*page & logo as tab* | *page* | *page* | *page & tab* | *page & tab* | *page & tab* | *section* | 
+*page & logo as tab* | *page & tab* | *page & tab* | *page & tab* | *page & tab* | *page & tab* | *section* | 
 link to New Members | | | | |
 link to Sponsors | | | | |
 contains About | | | | |
