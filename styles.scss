@@ -143,6 +143,12 @@ $family-secondary: "Open Sans", serif;
 
     }
 
+    #team{
+        .team-member{
+            margin-bottom: 32px;
+        }
+    }
+
     #sponsors{
         @extend .primary-link;
     }
