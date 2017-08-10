@@ -48,9 +48,9 @@ $family-secondary: "Open Sans", serif;
 
 .primary-link{
     a{
-        color: $primary;
+        color: $primary !important;
         &:hover{
-            color: $dark;
+            color: $dark !important;
         }
     }
 }
@@ -72,6 +72,14 @@ $family-secondary: "Open Sans", serif;
         .container{
             width: 48%;
         }
+    }
+}
+
+.content{
+    font-family: $family-secondary;
+    @extend .primary-link;
+    a{
+        text-decoration: underline;
     }
 }
 

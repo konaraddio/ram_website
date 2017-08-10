@@ -2902,10 +2902,10 @@ a.nav-item {
 .subtitle {
   font-family: "Open Sans", serif; }
 
-.primary-link a, #footer a, #landing-page #sponsors a, #sponsors-page a {
-  color: #EF4836; }
-  .primary-link a:hover, #footer a:hover, #landing-page #sponsors a:hover, #sponsors-page a:hover {
-    color: #363636; }
+.primary-link a, .content a, #footer a, #landing-page #sponsors a, #sponsors-page a {
+  color: #EF4836 !important; }
+  .primary-link a:hover, .content a:hover, #footer a:hover, #landing-page #sponsors a:hover, #sponsors-page a:hover {
+    color: #363636 !important; }
 
 .hero-head .title {
   margin-top: 100px;
@@ -2918,6 +2918,11 @@ a.nav-item {
 @media screen and (min-width: 1000px) {
   .desktop-width-limited .container {
     width: 48%; } }
+
+.content {
+  font-family: "Open Sans", serif; }
+  .content a {
+    text-decoration: underline; }
 
 #footer a:hover {
   color: whitesmoke; }
