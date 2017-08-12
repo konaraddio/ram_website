@@ -204,6 +204,15 @@ $family-secondary: "Open Sans", serif;
     }
 }
 
+#qubo-page{
+    #qubo_mobile_image{
+        background-image: url("./assets/qubo_cad_mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
 /*The below is for the Resources Page only*/
 #resources-page {
 
