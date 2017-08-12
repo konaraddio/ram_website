@@ -47,14 +47,25 @@ $family-secondary: "Open Sans", serif;
     font-family: $family-secondary;
 }
 
-.primary-link{
+
+.primary-light-link{
     a{
-        color: $primary !important;
-        &:hover{
-            color: $dark !important;
+        color: $primary;
+        :hover{
+            color: $light;
         }
     }
 }
+
+.primary-dark-link{
+    a{
+        color: $primary;
+        :hover{
+            color: $dark;
+        }
+    }
+}
+
 
 .hero-head{
     .title{
@@ -78,18 +89,15 @@ $family-secondary: "Open Sans", serif;
 
 .content{
     font-family: $family-secondary;
-    @extend .primary-link;
     a{
         text-decoration: underline;
     }
 }
 
 #footer{
-    @extend .primary-link;
-    a:hover{
-        color: $light;
-    }
+    @extend .primary-light-link;
 }
+
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing-page {
@@ -129,7 +137,8 @@ $family-secondary: "Open Sans", serif;
     }
 
     #about{
-        @extend .primary-link;
+
+        @extend .primary-dark-link;
 
         .hero-body{
 
@@ -177,15 +186,19 @@ $family-secondary: "Open Sans", serif;
     }
 
     #sponsors{
-        @extend .primary-link;
+        @extend .primary-dark-link;
     }
+
 }
 
 #sponsors-page{
-    @extend .primary-link;
+    @extend .primary-dark-link;
 }
 
 #robots-page{
+
+    @extend .primary-dark-link;
+
     #qubo-image{
         background-image: url("../assets/qubo_robot.jpg");
         background-size: cover;
@@ -205,6 +218,9 @@ $family-secondary: "Open Sans", serif;
 }
 
 #qubo-page{
+
+    @extend .primary-dark-link;
+
     #qubo_mobile_image{
         background-image: url("./assets/qubo_cad_mobile.jpg");
         background-size: cover;
@@ -215,6 +231,8 @@ $family-secondary: "Open Sans", serif;
 
 /*The below is for the Resources Page only*/
 #resources-page {
+
+    @extend .primary-dark-link;
 
     a{
         font-family: $family-secondary;

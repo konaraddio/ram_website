@@ -2926,10 +2926,15 @@ a.nav-item {
 .subtitle {
   font-family: "Open Sans", serif; }
 
-.primary-link a, .content a, #footer a, #landing-page #about a, #landing-page #sponsors a, #sponsors-page a {
-  color: #EF4836 !important; }
-  .primary-link a:hover, .content a:hover, #footer a:hover, #landing-page #about a:hover, #landing-page #sponsors a:hover, #sponsors-page a:hover {
-    color: #363636 !important; }
+.primary-light-link a, #footer a {
+  color: #EF4836; }
+  .primary-light-link a :hover, #footer a :hover {
+    color: whitesmoke; }
+
+.primary-dark-link a, #landing-page #about a, #landing-page #sponsors a, #sponsors-page a, #robots-page a, #qubo-page a, #resources-page a {
+  color: #EF4836; }
+  .primary-dark-link a :hover, #landing-page #about a :hover, #landing-page #sponsors a :hover, #sponsors-page a :hover, #robots-page a :hover, #qubo-page a :hover, #resources-page a :hover {
+    color: #363636; }
 
 .hero-head .title {
   margin-top: 100px;
@@ -2947,9 +2952,6 @@ a.nav-item {
   font-family: "Open Sans", serif; }
   .content a {
     text-decoration: underline; }
-
-#footer a:hover {
-  color: whitesmoke; }
 
 /*The below is for the Landing (i.e. Home / Game+About) Page only*/
 #landing-page #club-section.columns {
