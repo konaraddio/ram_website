@@ -92,6 +92,7 @@ $family-secondary: "Open Sans", serif;
     a{
         text-decoration: underline;
     }
+    @extend .primary-dark-link;
 }
 
 #footer{
@@ -191,13 +192,15 @@ $family-secondary: "Open Sans", serif;
 
 }
 
+#newmembers-page{
+    @extend .primary-dark-link;
+}
+
 #sponsors-page{
     @extend .primary-dark-link;
 }
 
 #robots-page{
-
-    @extend .primary-dark-link;
 
     #qubo-image{
         background-image: url("../assets/qubo_robot.jpg");
@@ -215,6 +218,10 @@ $family-secondary: "Open Sans", serif;
         width: 100%;
         min-height: 128px;
     }
+
+    .content{
+        @extend .primary-dark-link;
+    }
 }
 
 #qubo-page{
@@ -231,8 +238,6 @@ $family-secondary: "Open Sans", serif;
 
 /*The below is for the Resources Page only*/
 #resources-page {
-
-    @extend .primary-dark-link;
 
     a{
         font-family: $family-secondary;
@@ -254,6 +259,9 @@ $family-secondary: "Open Sans", serif;
         }
 
         .resource-card{
+
+            @extend .primary-dark-link;
+
             .title, .subtitle, p, blockquote, span{
                 font-family: $family-secondary;
             }

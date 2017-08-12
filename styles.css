@@ -2931,9 +2931,9 @@ a.nav-item {
   .primary-light-link a :hover, #footer a :hover {
     color: whitesmoke; }
 
-.primary-dark-link a, #landing-page #about a, #landing-page #sponsors a, #sponsors-page a, #robots-page a, #qubo-page a, #resources-page a {
+.primary-dark-link a, .content a, #landing-page #about a, #landing-page #sponsors a, #newmembers-page a, #sponsors-page a, #robots-page .content a, #qubo-page a, #resources-page .columns .resource-card a {
   color: #EF4836; }
-  .primary-dark-link a :hover, #landing-page #about a :hover, #landing-page #sponsors a :hover, #sponsors-page a :hover, #robots-page a :hover, #qubo-page a :hover, #resources-page a :hover {
+  .primary-dark-link a :hover, .content a :hover, #landing-page #about a :hover, #landing-page #sponsors a :hover, #newmembers-page a :hover, #sponsors-page a :hover, #robots-page .content a :hover, #qubo-page a :hover, #resources-page .columns .resource-card a :hover {
     color: #363636; }
 
 .hero-head .title {
