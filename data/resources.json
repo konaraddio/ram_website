@@ -5,10 +5,7 @@
             "link": "//www.google.com/",
             "author": "Argh Argh Argh",
             "description": [
-                "Each resource can have a description"
-            ],
-            "quote": [
-                "Maybe have a quote from each resource here? Or a quote about what team member had to say about this? Or perhaps on quote at all."
+                "Each resource can have a title, author, description, and list of categories."
             ],
             "categories": [
                 {"category": "Mechanical"},
