@@ -1,4 +1,4 @@
-@import "./node_modules/bulma/sass/utilities/initial-variables";
+@import "./css/bulma/sass/utilities/initial-variables";
 $orange: #EC644B;
 $blue: #446CB3;
 $red: #EF4836;
@@ -7,26 +7,26 @@ $primary: $red;
 /*Font linked in <head> of html pages*/
 $family-primary: "Oswald", sans-serif;
 $family-secondary: "Open Sans", serif;
-@import "./node_modules/bulma/sass/utilities/_all.sass";
+@import "./css/bulma/sass/utilities/_all.sass";
 
-@import "./node_modules/bulma/sass/base/_all.sass";
+@import "./css/bulma/sass/base/_all.sass";
 
-@import "./node_modules/bulma/sass/elements/box.sass";
-@import "./node_modules/bulma/sass/elements/button.sass";
-@import "./node_modules/bulma/sass/elements/content.sass";
-@import "./node_modules/bulma/sass/elements/image.sass";
-@import "./node_modules/bulma/sass/elements/icon.sass";
-@import "./node_modules/bulma/sass/elements/other.sass";
-@import "./node_modules/bulma/sass/elements/tag.sass";
-@import "./node_modules/bulma/sass/elements/title.sass";
+@import "./css/bulma/sass/elements/box.sass";
+@import "./css/bulma/sass/elements/button.sass";
+@import "./css/bulma/sass/elements/content.sass";
+@import "./css/bulma/sass/elements/image.sass";
+@import "./css/bulma/sass/elements/icon.sass";
+@import "./css/bulma/sass/elements/other.sass";
+@import "./css/bulma/sass/elements/tag.sass";
+@import "./css/bulma/sass/elements/title.sass";
 
-@import "./node_modules/bulma/sass/grid/columns.sass";
+@import "./css/bulma/sass/grid/columns.sass";
 
-@import "./node_modules/bulma/sass/components/nav.sass";
-@import "./node_modules/bulma/sass/components/tabs.sass";
-@import "./node_modules/bulma/sass/components/menu.sass";
+@import "./css/bulma/sass/components/nav.sass";
+@import "./css/bulma/sass/components/tabs.sass";
+@import "./css/bulma/sass/components/menu.sass";
 
-@import "./node_modules/bulma/sass/layout/_all.sass";
+@import "./css/bulma/sass/layout/_all.sass";
 
 .nav {
     height: 75px;

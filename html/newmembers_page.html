@@ -1,135 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: default
+title: Join Robotics @ Maryland
+tagname: newmembers
+currenttab: newmembers-tab
+description: Learn how you can join R@M today!
+jquery: false
+---
 
-    <title>Robotics at Maryland</title>
-
-    <!--Linking the css file (generated using sass and Bulma)-->
-    <link rel="stylesheet" type="text/css" href="../styles.min.css" />
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Colors the URL bar in Chrome on mobile only-->
-    <meta name="theme-color" content="#EF4836" />
-    <!--To control layout on mobile browsers-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="The new members' page for Robotics @ Maryland." />
-    <!--Google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
-
-    <!--Font awesome icons loaded before </body> tag-->
-
-</head>
-
-
-<body>
-
-    <!--Navigation Bar-->
-    <nav class="nav has-shadow">
-    </nav>
-
-    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
-    <script>
-        $(function(){
-            $('.nav').load('./navigation_bar.html', function(){
-                $('#newmembers-tab').addClass('is-active');
-            });
-        });
-    </script>
-
-    <!--This is for everything inside the New Members Page, excluding the navbar & footer-->
-    <div id="newmembers-page">
-        <section id="join-us-today" class="hero is-primary">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title is-spaced upper">
-                        Join us today
-                    </h1>
-                    <h2 class="subtitle">
-                        Follow the steps below and you'll be a member of Robotics @ Maryland in no time! 
-                    </h2>
-                </div>
-            </div>
-        </section> 
-        <section class="hero is-light">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="content is-medium">
-                        <h1>How to Become a New Member</h1>
-                        <h3>1. Join us on OrgSync</h3>
-                        <p><a href="https://orgsync.com/64237/chapter" target="_blank">https://orgsync.com/64237/chapter</a></p>
-                        <h3>2. Fill out the Form</h3>
-                        <p>
-                            <a class="primary-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdzRxc56wnHyP8ORI7_Ehm9lNag_8YjWAzwPIZFWbKsog54vw/viewform?usp=sf_link" target="_blank">
-                                This form
-                            </a> 
-                            lets us know your interests and skills so we can pair you up with the right subteam.
-                        </p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section> 
-        <section id="for-new-members" class="hero is-primary">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title is-spaced upper">
-                        Are you a new member?
-                    </h1>
-                    <h2 class="subtitle">
-                        Check out the below and get up to speed with what we've been doing!
-                    </h2>
-                </div>
-            </div>
-        </section> 
-        <section class="hero is-light">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="content is-medium">
-                        <h1>Lorem Ispum this</h1>
-                        <h3>1. Lorem Ipsum this Lorem Ipsum that</h3>
-                        <p>Lorem Ipsum this Lorem Ipsum that Lorem Ipsum this Lorem Ipsum that</p>
-                        <h3>2. Lorem Ipsum this Lorem Ipsum that</h3>
-                        <p>
-                            Lorem Ipsum this Lorem Ipsum that Lorem Ipsum this Lorem Ipsum that 
-                        </p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section> 
+<section id="join-us-today" class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-spaced upper">
+                Join us today
+            </h1>
+            <h2 class="subtitle">
+                Follow the steps below and you'll be a member of Robotics @ Maryland in no time! 
+            </h2>
+        </div>
     </div>
-
-
-    <!--Footer-->
-    <div id="footer">
+</section> 
+<section class="hero is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content is-medium">
+                <h1>How to Become a New Member</h1>
+                <h3>1. Join us on OrgSync</h3>
+                <p><a href="https://orgsync.com/64237/chapter" target="_blank">https://orgsync.com/64237/chapter</a></p>
+                <h3>2. Fill out the Form</h3>
+                <p>
+                    <a class="primary-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdzRxc56wnHyP8ORI7_Ehm9lNag_8YjWAzwPIZFWbKsog54vw/viewform?usp=sf_link" target="_blank">
+                        This form
+                    </a> 
+                    lets us know your interests and skills so we can pair you up with the right subteam.
+                </p>
+            </div>
+        </div>
+        </div>
     </div>
-
-    <!--Loading the Footer above and other scripts-->
-    <script>
-        $(function() {
-            $('#footer').load('./footer.html');
-        });
-    </script>
-
-    <!--Load font awesome icons-->
-    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </noscript>
-    <script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
-
-
-</body>
-
-</html>
+</section> 
+<section id="for-new-members" class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-spaced upper">
+                Are you a new member?
+            </h1>
+            <h2 class="subtitle">
+                Check out the below and get up to speed with what we've been doing!
+            </h2>
+        </div>
+    </div>
+</section> 
+<section class="hero is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content is-medium">
+                <h1>Lorem Ispum this</h1>
+                <h3>1. Lorem Ipsum this Lorem Ipsum that</h3>
+                <p>Lorem Ipsum this Lorem Ipsum that Lorem Ipsum this Lorem Ipsum that</p>
+                <h3>2. Lorem Ipsum this Lorem Ipsum that</h3>
+                <p>
+                    Lorem Ipsum this Lorem Ipsum that Lorem Ipsum this Lorem Ipsum that 
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section> 
+   

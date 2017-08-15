@@ -1,116 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: default
+title: Sponsors of Robotics @ Maryland
+tagname: sponsors
+currenttab: sponsors-tab
+description: Learn how you can become a sponor today!
+jquery: false
+---
 
-    <title>Robotics at Maryland</title>
-
-    <!--Linking the css file (generated using sass and Bulma)-->
-    <link rel="stylesheet" type="text/css" href="../styles.min.css" />
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Colors the URL bar in Chrome on mobile only-->
-    <meta name="theme-color" content="#EF4836" />
-    <!--To control layout on mobile browsers-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="The sponsors page for Robotics @ Maryland." />
-    <!--Google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
-
-    <!--Font awesome icons loaded before </body> tag-->
-
-</head>
-
-<body>
-
-    <!--Navigation Bar-->
-    <nav class="nav has-shadow">
-    </nav>
-
-    <!--The script below loads the Navigation bar and toggles the appropriate tab-->
-    <script>
-        $(function(){
-            $('.nav').load('./navigation_bar.html', function(){
-                $('#sponsors-tab').addClass('is-active');
-            });
-        });
-    </script>
-
-    <!--This is for everything inside the Sponsors Page, excluding the navbar & footer-->
-    <div id="sponsors-page">
-        <section id="sponsors" class="hero is-light">
-             <!--Section dedicated towards Becoming a Sponsor-->
-            <div class="hero-head desktop-width-limited">
-                <div class="container has-text-centered">
-                   <p class="title is-1 upper is-spaced">
-                        Become a
-                        <br class="is-hidden-tablet"/>
-                        Sponsor Today
-                    </p>
-                    <p class="subtitle is-3">
-                        Please check out our <a href="../404.html">Sponsor Packet</a>
-                        and <a href="mailto:treasurer@ram.umd.edu">contact us</a>.
-                    </p>
-                    <p class="subtitle is-5">
-                        Gifts in support of the University of Maryland are accepted and managed by the University of Maryland College Park Foundation, Inc. an affiliated 501(c)(3) organization authorized by the Board of Regents. 
-                        Contributions to the University of Maryland are tax deductible as allowed by law.  
-                        <br/>
-                        Please see your tax advisor for more details.                   
-                    </p>
-                </div>
-            </div>
-            <!--the below is for spacing that happens to be equivalent to the spacing at the top of the previous section-->
-            <div><br/></div>
-             <!--Section dedicated towards Becoming a Sponsor-->
-            <div class="hero-body desktop-width-limited">
-                <div class="container has-text-centered">
-                    <p class="title is-1 is-spaced upper">
-                        Thank you
-                        <br class="is-hidden-tablet"/>
-                        to our
-                        <br class="is-hidden-tablet"/>
-                        Sponsors
-                    </p>
-                    <p class="subtitle is-3">
-                        Our team, for all its accomplishments, could not compete without the generous support of our sponsors.
-                    </p>
-                    <img src="../assets/sponsors.png" alt="Our Past Sponsors">
-                </div>
-            </div>
-        </section>
-
+<section id="sponsors" class="hero is-light">
+        <!--Section dedicated towards Becoming a Sponsor-->
+    <div class="hero-head desktop-width-limited">
+        <div class="container has-text-centered">
+            <p class="title is-1 upper is-spaced">
+                Become a
+                <br class="is-hidden-tablet"/>
+                Sponsor Today
+            </p>
+            <p class="subtitle is-3">
+                Please check out our <a href="../404.html">Sponsor Packet</a>
+                and <a href="mailto:treasurer@ram.umd.edu">contact us</a>.
+            </p>
+            <p class="subtitle is-5">
+                Gifts in support of the University of Maryland are accepted and managed by the University of Maryland College Park Foundation, Inc. an affiliated 501(c)(3) organization authorized by the Board of Regents. 
+                Contributions to the University of Maryland are tax deductible as allowed by law.  
+                <br/>
+                Please see your tax advisor for more details.                   
+            </p>
+        </div>
     </div>
-
-
-    <!--Footer-->
-    <div id="footer">
+    <!--the below is for spacing that happens to be equivalent to the spacing at the top of the previous section-->
+    <div><br/></div>
+        <!--Section dedicated towards Becoming a Sponsor-->
+    <div class="hero-body desktop-width-limited">
+        <div class="container has-text-centered">
+            <p class="title is-1 is-spaced upper">
+                Thank you
+                <br class="is-hidden-tablet"/>
+                to our
+                <br class="is-hidden-tablet"/>
+                Sponsors
+            </p>
+            <p class="subtitle is-3">
+                Our team, for all its accomplishments, could not compete without the generous support of our sponsors.
+            </p>
+            <img src="../assets/sponsors.png" alt="Our Past Sponsors">
+        </div>
     </div>
+</section>
 
-    <!--Loading the Footer above and other scripts-->
-    <script>
-        $(function() {
-            $('#footer').load('./footer.html');
-        });
-    </script>
-
-    <!--Load font awesome icons-->
-    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </noscript>
-    <script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
-
-
-</body>
-
-</html>
+  
