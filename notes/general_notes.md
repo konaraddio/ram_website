@@ -14,3 +14,7 @@ Bare this in mind when following Bulma's latest documention.
 ### Where's the website?
 
 You'll need to run `jekyll build`
+
+### Minify CSS & JS
+
+Minify CSS and JavaScript before `jekyll build`. Install `minify` through `npm`.

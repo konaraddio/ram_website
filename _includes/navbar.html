@@ -18,7 +18,7 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
     <a id="resources-tab" href="{{site.url}}/html/resources_page.html" class="nav-item is-tab">Resources</a>
 </div>
 
-<span id="nav-toggle" class="nav-toggle" onclick="toggleNavOnMobile()">
+<span id="nav-toggle" class="nav-toggle">
     <span></span>
     <span></span>
     <span></span>
@@ -26,21 +26,21 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
 
 <!--For toggling nav menu on mobile-->
 <script>
-var menuToggled= false;
+    var menuToggled= false;
+    var navtoggle = document.getElementById('nav-toggle');
+    var navmenu = document.getElementById('nav-menu');
 
-function toggleNavOnMobile(){
+    navtoggle.onclick = function(){
 
-    if(menuToggled){
-        console.log("a hamburger should appear");
-        $('#nav-toggle').removeClass('is-active');
-        $('#nav-menu').removeClass('is-active');
-    }else{
-        console.log("an X should appear");
-        $('#nav-toggle').addClass('is-active');
-        $('#nav-menu').addClass('is-active');
+        if(menuToggled){
+            navtoggle.className = "nav-toggle";
+            navmenu.className = "nav-right nav-menu";
+        }else{
+            navtoggle.className += " is-active";
+            navmenu.className += " is-active";
+        }
+
+        menuToggled= !menuToggled;
+
     }
-
-    menuToggled= !menuToggled;
-
-}
 </script>
