@@ -2914,7 +2914,7 @@ a.nav-item {
   padding: 3rem 1.5rem 6rem; }
 
 .nav {
-  height: 75px;
+  height: 64px;
   /*The below keeps the hamburge menu centered (displayed on mobile layout)*/ }
   .nav .nav-menu {
     text-transform: uppercase; }
