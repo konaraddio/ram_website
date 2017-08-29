@@ -60,16 +60,6 @@ html, body{
     font-family: $family-secondary;
 }
 
-
-.primary-light-link{
-    a{
-        color: $primary;
-        :hover{
-            color: $light;
-        }
-    }
-}
-
 .primary-dark-link{
     a{
         color: $primary;
@@ -101,26 +91,26 @@ html, body{
     }
 }
 
-.content{
+.hero .container .content{
     font-family: $family-secondary;
     a{
+        color: $primary;
         text-decoration: underline;
     }
-    @extend .primary-dark-link;
 }
 
 #footer{
-    @extend .primary-light-link;
+    a{
+        color: $primary;
+    }
 }
 
 @import "landing_page.scss";
 
-#newmembers-page{
-    @extend .primary-dark-link;
-}
-
 #sponsors-page{
-    @extend .primary-dark-link;
+    a{
+        color: $primary;
+    }
 }
 
 #robots-page{
@@ -141,18 +131,22 @@ html, body{
         width: 100%;
         min-height: 128px;
     }
-
-    .content{
-        @extend .primary-dark-link;
-    }
 }
 
 #qubo-page{
 
-    @extend .primary-dark-link;
-
     #qubo_mobile_image{
         background-image: url("./assets/qubo_cad_mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
+#tortuga-page{
+    
+    #tortuga_image{
+        background-image: url("./assets/tortuga_2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -182,8 +176,6 @@ html, body{
         }
 
         .resource-card{
-
-            @extend .primary-dark-link;
 
             .title, .subtitle, p, blockquote, span{
                 font-family: $family-secondary;
