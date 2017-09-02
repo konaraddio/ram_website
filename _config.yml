@@ -1,5 +1,5 @@
 exclude:
-    ['notes/', 'mustaches/', 'README.md', 'resources.json']
+    ['mustaches/', 'README.md', 'resources.json']
 sass:
     sass_dir: _sass
     style: compressed

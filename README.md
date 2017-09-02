@@ -1,7 +1,9 @@
 # Robotics @ Maryland Website
 
-Bulma 0.4.2
+Built with Bulma and Jekyll.
 
 http://ramwebsite.surge.sh/
 
-Using Surge for deployment until development is finished.
+## Wait, where's the website?
+
+Inside `_site/`

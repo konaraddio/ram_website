@@ -6,9 +6,39 @@ currenttab: home-tab
 description: Check out Robotics @ Maryland!
 jquery: false
 ---
+<section id="anouncement" class="hero is-warning is-hidden">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 id="anouncement-title" class="title is-spaced upper">
+                anouncement
+            </h1>
+            <h2 id="anouncement-details" class="subtitle">
+                Follow the steps below and you'll be a member of Robotics @ Maryland in no time! 
+            </h2>
+        </div>
+    </div>
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script type='text/javascript'>    
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1TFB8Sb-NEyFBz-o-wpk0ebERaPL_IiVMZ0nsc3YPuG8/edit?usp=sharing';
 
+    function init() {
+        Tabletop.init( { key: publicSpreadsheetUrl,
+                        callback: showInfo,
+                        simpleSheet: true } )
+    }
+
+    function showInfo(data, tabletop) {
+        if(data[0].title != ""){
+            document.getElementById("anouncement-title").innerHTML = data[0].title;
+            document.getElementById("anouncement-details").innerHTML = data[0].details;
+            document.getElementById("anouncement").classList = "hero is-warning";
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+</script>
 <div id="club-section">
-
         <section id="club-join-sponsor" class="hero is-dark is-bold is-fullheight">
             <div class="hero-body">
                 <div class="container has-text-centered">
