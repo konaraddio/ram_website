@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Robotics @ Maryland Home</title>
+
+    <!--Linking the css file (generated using sass and Bulma)-->
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    
+    <!--Colors the URL bar in Chrome on mobile only-->
+    <meta name="theme-color" content="#EF4836" />
+    <!--To control layout on mobile browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Check out Robotics @ Maryland!" />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
+
+    
+
+    <!--Font awesome icons loaded before </body> tag-->
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="nav has-shadow">
+        <!--
+Note that this is the same Navigation Bar across all html pages.
+This is loaded into the <nav></nav> on each html page requiring a navigation bar.
+-->
+
+<!--On the top left hand side is the CyberEdu logo-->
+<div class="nav-left">
+    <a id="ram-home-logo" href="/index.html" class="nav-item is-tab is-active upper">
+        <img src="/assets/logo.png" alt="Robotics @ Maryland logo"/>
+        &nbsp; Robotics at Maryland 
+    </a>
+</div>
+
+<div id="nav-menu" class="nav-right nav-menu">
+    <a id="home-tab" href="/index.html" class="nav-item is-tab">Home</a>
+    <a id="newmembers-tab" href="/html/newmembers_page.html" class="nav-item is-tab">Join Us</a>
+    <a id="sponsors-tab" href="/html/sponsors_page.html" class="nav-item is-tab">Sponsor</a>
+    <a id="robots-tab" href="/html/robots_page.html" class="nav-item is-tab">Robots</a>
+    <!--<a id="resources-tab" href="/html/resources_page.html" class="nav-item is-tab">Resources</a>-->
+</div>
+
+<span id="nav-toggle" class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+
+<!--For toggling nav menu on mobile-->
+<script>
+    var menuToggled= false;
+    var navtoggle = document.getElementById('nav-toggle');
+    var navmenu = document.getElementById('nav-menu');
+
+    navtoggle.onclick = function(){
+
+        if(menuToggled){
+            navtoggle.className = "nav-toggle";
+            navmenu.className = "nav-right nav-menu";
+        }else{
+            navtoggle.className += " is-active";
+            navmenu.className += " is-active";
+        }
+
+        menuToggled= !menuToggled;
+
+    }
+</script>
+
+    </nav>
+    <script>
+        document.getElementById('home-tab').classList += " is-active";                
+    </script>
+
+    <!--This is for everything inside the Landing Page, excluding the navbar & footer-->
+    <div id="landing-page">
+
+        <section id="anouncement" class="hero is-warning is-hidden">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 id="anouncement-title" class="title is-spaced upper">
+                anouncement
+            </h1>
+            <h2 id="anouncement-details" class="subtitle">
+                Follow the steps below and you'll be a member of Robotics @ Maryland in no time! 
+            </h2>
+        </div>
+    </div>
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script type='text/javascript'>    
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1TFB8Sb-NEyFBz-o-wpk0ebERaPL_IiVMZ0nsc3YPuG8/edit?usp=sharing';
+
+    function init() {
+        Tabletop.init( { key: publicSpreadsheetUrl,
+                        callback: showInfo,
+                        simpleSheet: true } )
+    }
+
+    function showInfo(data, tabletop) {
+        if(data[0].title != ""){
+            document.getElementById("anouncement-title").innerHTML = data[0].title;
+            document.getElementById("anouncement-details").innerHTML = data[0].details;
+            document.getElementById("anouncement").classList = "hero is-warning";
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+</script>
+<div id="club-section">
+        <section id="club-join-sponsor" class="hero is-dark is-bold is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <img class="is-hidden-touch" src="./assets/logo.png" alt="Logo">
+                    <img class="is-hidden-desktop" src="./assets/small_logo.png" alt="Logo">
+                    <h1 class="title is-1 is-spaced upper">
+                        Robotics
+                        <br class="is-hidden-tablet"/>
+                        At
+                        <br class="is-hidden-tablet"/> 
+                        Maryland
+                    </h1>
+                    <a class="button is-large is-primary upper" href="./html/newmembers_page.html">
+                        Join Us
+                    </a>
+                    <a class="button is-large is-primary is-inverted upper" href="./html/sponsors_page.html">
+                        Sponsor 
+                    </a>
+                    <p><br/></p>
+                    <h3 class="subtitle is-3 is-spaced">
+                        Neutral Buoyancy Research Lab
+                        <br/>
+                        Top Floor
+                        <br/>
+                        Tuesdays & Thursdays
+                        <br/>
+                        6:30PM - 8:30PM
+                    </h3>
+                </div>
+            </div>
+        </section>
+</div>
+
+<!--Section dedicated towards the About Section-->
+<section id="about" class="hero is-light">
+
+    <div class="hero-head">
+        <div class="container has-text-centered">
+            <p class="title is-1 upper">
+                About
+            </p>
+        </div>
+    </div>
+
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-9">
+                    <h1 class="title is-3 is-spaced">
+                        What is Robotics @ Maryland?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        Robotics @ Maryland is the student-run robotics team at the University of Maryland, College Park. Open to any University of Maryland student, Robotics @ Maryland competes in AUVSI and ONR's Robosub Competition.
+                    </h2>
+
+                    <h1 class="title is-3 is-spaced">
+                        Who can join?
+                    </h1>
+                    <h2 class="subtitle is-spaced">
+                        If you're a University of Maryland student, Robotics @ Maryland has a place for you! It doesn't matter what your major is, as we have all sorts of jobs that need doing. If you're worried that you don't know enough about a subject to be useful, stop worrying: you can learn on the job, and enthusiasm trumps prior knowledge any day.
+                    </h2>
+
+                    <!--About video-->
+                    <div class="has-text-centered video">
+                        <iframe frameborder="0" scrolling="no" src="//www.youtube.com/embed/1-3Oyxo6MLw"></iframe>
+                    </div>
+
+                    <br class="is-hidden-desktop"/>
+                    <a class="subtitle is-5 is-hidden-desktop" href="#">Follow Us on Twitter 
+                        <span class="icon">
+                            <i class="fa fa-twitter"></i>
+                        </span>
+                        @UMDrobotics
+                    </a>
+                    
+                </div>
+                <div class="column is-3 is-hidden-touch">
+                    <a class="twitter-timeline" data-height="900" data-theme="dark" href="https://twitter.com/UMDrobotics">Tweets by UMDrobotics</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Section dedicated towards the Team Section-->
+<section id="team" class="hero is-dark">
+
+    <div class="hero-head">
+        <div class="container has-text-centered">
+            <p class="title is-1 upper">
+                Meet the Team
+            </p>
+        </div>
+    </div>
+
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-multiline is-desktop">
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Jeremy Weed</h1>
+                    <h5 class="subtitle is-5">President</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Peter Peng</h1>
+                    <h5 class="subtitle is-5">Vice President, Mechanical Lead</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Jack Rogers</h1>
+                    <h5 class="subtitle is-5">Treasurer</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Alex Jiao</h1>
+                    <h5 class="subtitle is-5">Electrical Lead</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Greg Harris</h1>
+                    <h5 class="subtitle is-5">Systems Lead</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Ross Baehr</h1>
+                    <h5 class="subtitle is-5">Software Lead</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Kyle Montemayer</h1>
+                    <h5 class="subtitle is-5">Embedded</h1>
+                </div>
+                <div class="column is-3 team-member">
+                    <h3 class="title is-3 upper is-spaced">Omkar Konaraddi</h1>
+                    <h5 class="subtitle is-5">Webmaster</h1>
+                </div>  
+            </div>
+            <figure class="team-photo box">
+                <img src="./assets/ram_team.jpeg">
+            </figure>
+        </div>  
+    </div>
+
+</section>
+
+<!--Section dedicated towards Our Sponsors-->
+<section id="sponsors" class="hero is-light">
+    <div class="hero-head desktop-width-limited">
+        <div class="container has-text-centered">
+            <p class="title is-1 upper is-spaced">
+                Thank you
+                <br class="is-hidden-tablet"/>
+                to our
+                <br class="is-hidden-tablet"/>
+                Sponsors
+            </p>
+        </div>
+    </div>
+        <div class="hero-body desktop-width-limited">
+        <div class="container has-text-centered">
+            <p class="subtitle is-3">
+                Our team, for all its accomplishments, could not compete without the generous support of our sponsors.
+            </p>
+            <a class="subtitle is-3 is-spaced" href="./html/sponsors_page.html">
+                Learn how you can become a sponsor today.
+            </a>
+            <img src="./assets/sponsors.png" alt="Our Past Sponsors">
+        </div>
+    </div>
+</section>
+
+    
+
+    </div>
+
+
+    <!--Footer-->
+    <div id="footer">
+        <!--Footer-->
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="subtitle is-6">
+                Twitter: <a href="//twitter.com/UMDrobotics" target="_blank" rel="noreferrer noopener">@UMDrobotics</a>
+            </p>
+            <p class="subtitle is-6">
+                Contact Us: <a href="mailto:software@ram.umd.edu" target="_blank" rel="noreferrer noopener">software@ram.umd.edu</a>
+            </p>
+            <p class="subtitle is-6">
+                Built by <a href="//konaraddio.github.io" target="_blank" rel="noreferrer noopener">Omkar Konaraddi</a>
+            </p>
+        </div>
+    </div>
+</section>
+    </div>
+
+    <!--Load font awesome icons-->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+</body>
+
+</html>
