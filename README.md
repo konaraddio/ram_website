@@ -2,7 +2,7 @@
 
 Built with Bulma and Jekyll.
 
-http://ram.umd.edu/
+http://ramwebsite.surge.sh/
 
 ## Wait, where's the website?
 
