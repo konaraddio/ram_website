@@ -1,0 +1,10 @@
+# Example resources listings
+
+- title: Title of a Resource
+  link: http://www.yaml.org/spec/1.2/spec.html
+  description: Description of the Resource
+  categories: [New Members, Getting Started, Mechanical, Software, C++]
+
+- title: Title of Another Resource
+  description: Note that links are optional
+  categories: [category1, category2]
