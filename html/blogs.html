@@ -1,0 +1,25 @@
+---
+layout: default
+title: Qubo from R@M
+tagname: qubo
+currenttab: robots-tab
+description: Learn more about Qubo, a robot from R@M
+jquery: false
+---
+
+<section class="hero is-light">
+    <div class="hero-body desktop-width-limited">
+        <div class="container">
+            <div class="content is-medium">
+                <h1>Recent Blogs</h1>
+                {% for post in site.posts %}
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <h6>{{ post.date | date: site.date_format }}</h6>
+                <p>{{ post.excerpt }}</p>
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+        </div>
+    </div>
+</section> 

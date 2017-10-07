@@ -95,13 +95,18 @@ html, body{
     font-family: $family-secondary;
     a{
         color: $primary;
-        text-decoration: underline;
+        &:hover{
+            color: $dark;
+        }
     }
 }
 
 #footer{
     a{
         color: $primary;
+        &:hover{
+            color: $white;
+        }
     }
 }
 
@@ -197,3 +202,5 @@ html, body{
     }
 
 }
+
+@import "post";
