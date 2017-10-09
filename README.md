@@ -2,7 +2,8 @@
 
 Built with Bulma and Jekyll.
 
-http://ramwebsite.surge.sh/
+http://ram.umd.edu/
 
-### **The website has been moved to the `Robotics-at-Maryland` organization**
+Please read [documentation](documentation.md) before working on the website.
 
+Most recent changes have not been put on the server. Most recent changes include static blogging.
