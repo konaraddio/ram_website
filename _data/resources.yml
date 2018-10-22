@@ -113,3 +113,8 @@
   link: https://github.com/robotics-at-maryland
   description: Our software is located on Github.
   categories: [Software]
+
+- title: R@M Wiki Page
+  link: https://github.com/robotics-at-maryland/ram_website.git
+  description: Our wiki page with resources on how to get started with catkin, ROS, and Git.
+  categories: [Software, New Members]
