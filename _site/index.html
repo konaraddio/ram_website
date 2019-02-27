@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <title>Robotics @ Maryland Home</title>
+    <meta charset="utf-8"> 
+    <title>Robotics at Maryland Home</title>
 
     <!--Linking the css file (generated using sass and Bulma)-->
     <link rel="stylesheet" type="text/css" href="/styles.css" />
@@ -42,7 +42,8 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
     <a id="home-tab" href="/index.html" class="nav-item is-tab">Home</a>
     <a id="sponsors-tab" href="/html/sponsors_page.html" class="nav-item is-tab">Sponsor</a>
     <a id="robots-tab" href="/html/robots_page.html" class="nav-item is-tab">Robots</a>
-    <a id="robots-tab" href="/html/resources_page.html" class="nav-item is-tab">Resources</a>
+    <a id="resources-tab" href="/html/resources_page.html" class="nav-item is-tab">Resources</a>
+    <a id="blogs-tab" href="/html/blogs.html" class="nav-item is-tab">Blogs</a>
 </div>
 
 <span id="nav-toggle" class="nav-toggle">
@@ -87,30 +88,30 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
                 anouncement
             </h1>
             <h2 id="anouncement-details" class="subtitle">
-                Follow the steps below and you'll be a member of Robotics @ Maryland in no time!
+                Follow the steps below to become a member of Robotics at Maryland! 
             </h2>
         </div>
     </div>
 </section>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-<script type='text/javascript'>
- var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1TFB8Sb-NEyFBz-o-wpk0ebERaPL_IiVMZ0nsc3YPuG8/edit?usp=sharing';
+<script type='text/javascript'>    
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1TFB8Sb-NEyFBz-o-wpk0ebERaPL_IiVMZ0nsc3YPuG8/edit?usp=sharing';
 
- function init() {
-     Tabletop.init( { key: publicSpreadsheetUrl,
-                      callback: showInfo,
-                      simpleSheet: true } )
- }
+    function init() {
+        Tabletop.init( { key: publicSpreadsheetUrl,
+                        callback: showInfo,
+                        simpleSheet: true } )
+    }
 
- function showInfo(data, tabletop) {
-     if(data[0].title != ""){
-         document.getElementById("anouncement-title").innerHTML = data[0].title;
-         document.getElementById("anouncement-details").innerHTML = data[0].details;
-         document.getElementById("anouncement").classList = "hero is-warning";
-     }
- }
+    function showInfo(data, tabletop) {
+        if(data[0].title != ""){
+            document.getElementById("anouncement-title").innerHTML = data[0].title;
+            document.getElementById("anouncement-details").innerHTML = data[0].details;
+            document.getElementById("anouncement").classList = "hero is-warning";
+        }
+    }
 
- window.addEventListener('DOMContentLoaded', init)
+    window.addEventListener('DOMContentLoaded', init)
 </script>
 <div id="club-section">
         <section id="club-join-sponsor" class="hero is-dark is-bold is-fullheight">
@@ -122,14 +123,14 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
                         Robotics
                         <br class="is-hidden-tablet"/>
                         At
-                        <br class="is-hidden-tablet"/>
+                        <br class="is-hidden-tablet"/> 
                         Maryland
                     </h1>
                     <a class="button is-large is-primary upper" href="#joinus">
                         Join Us
                     </a>
                     <a class="button is-large is-primary is-inverted upper" href="./html/sponsors_page.html">
-                        Sponsor
+                        Sponsor 
                     </a>
                     <p><br/></p>
                     <h3 class="subtitle is-3 is-spaced">
@@ -162,25 +163,25 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
             <div class="columns">
                 <div class="column is-9">
                     <h1 class="title is-3 is-spaced">
-                        What is Robotics @ Maryland?
+                        What is Robotics at Maryland?
                     </h1>
                     <h2 class="subtitle">
-                        Robotics @ Maryland is the student-run robotics team at the University of Maryland, College Park. Open to any University of Maryland student, Robotics @ Maryland competes in AUVSI and ONR's Robosub Competition.
+                        We are the student-run robotics team at the University of Maryland, College Park. Open to any University of Maryland student, we compete in the Robosub Competition hosted by the Office for Naval Research (ONR) and the Association for Unmanned Vehicle Systems International (AUVSI).
                     </h2>
 
                     <h1 class="title is-3 is-spaced">
                         Who can join?
                     </h1>
                     <h2 class="subtitle">
-                        If you're a University of Maryland student, Robotics @ Maryland has a place for you! It doesn't matter what your major is, as we have all sorts of jobs that need doing. If you're worried that you don't know enough about a subject to be useful, stop worrying: you can learn on the job, and enthusiasm trumps prior knowledge any day.
+                        If you're a University of Maryland student, Robotics at Maryland has a place for you! It doesn't matter what your major is -- we have many jobs that require all kinds of skills. Any level of experience is welcome! We can teach you the necessary skills as long as you're passionate and interested.
                     </h2>
 
                     <h1 id="joinus" class="title is-3 is-spaced">
                         How do I join?
                     </h1>
                     <h2 class="subtitle">
-                        Come see us at the First Look Fair or attend one of our meetings!
-                        If you have any questions,  you can email us at <a href="mailto: team@ram.umd.edu">team@ram.umd.edu</a>.
+                        Check us out at the First Look Fair or attend one of our meetings. 
+                        Please <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzRxc56wnHyP8ORI7_Ehm9lNag_8YjWAzwPIZFWbKsog54vw/viewform" target="_blank">fill out this form</a> to let us know your interests and skills so we can pair you up with the right subteam.
                     </h2>
 
                     <!--About video-->
@@ -189,13 +190,13 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
                     </div>
 
                     <br class="is-hidden-desktop"/>
-                    <a class="subtitle is-5 is-hidden-desktop" href="#">Follow Us on Twitter
+                    <a class="subtitle is-5 is-hidden-desktop" href="#">Follow Us on Twitter 
                         <span class="icon">
                             <i class="fa fa-twitter"></i>
                         </span>
                         @UMDrobotics
                     </a>
-
+                    
                 </div>
                 <div class="column is-3 is-hidden-touch">
                     <a class="twitter-timeline" data-height="1050" data-theme="dark" href="https://twitter.com/UMDrobotics">Tweets by UMDrobotics</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -236,26 +237,18 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
                     <h5 class="subtitle is-5">Electrical Lead</h1>
                 </div>
                 <div class="column is-3 team-member">
-                    <h3 class="title is-3 upper is-spaced">Greg Harris</h1>
-                    <h5 class="subtitle is-5">Systems Lead</h1>
-                </div>
-                <div class="column is-3 team-member">
                     <h3 class="title is-3 upper is-spaced">Ross Baehr</h1>
                     <h5 class="subtitle is-5">Software Lead</h1>
                 </div>
                 <div class="column is-3 team-member">
-                    <h3 class="title is-3 upper is-spaced">Kyle Montemayer</h1>
-                    <h5 class="subtitle is-5">Embedded</h1>
-                </div>
-                <div class="column is-3 team-member">
                     <h3 class="title is-3 upper is-spaced">Omkar Konaraddi</h1>
                     <h5 class="subtitle is-5">Webmaster</h1>
-                </div>
+                </div>  
             </div>
             <figure class="team-photo box">
                 <img src="./assets/ram_team.jpeg">
             </figure>
-        </div>
+        </div>  
     </div>
 
 </section>
@@ -286,6 +279,7 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
     </div>
 </section>
 
+    
 
     </div>
 
@@ -301,9 +295,6 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
             </p>
             <p class="subtitle is-6">
                 Contact Us: <a href="mailto:software@ram.umd.edu" target="_blank" rel="noreferrer noopener">software@ram.umd.edu</a>
-            </p>
-            <p class="subtitle is-6">
-                Built by <a href="//konaraddio.github.io" target="_blank" rel="noreferrer noopener">Omkar Konaraddi</a>
             </p>
         </div>
     </div>

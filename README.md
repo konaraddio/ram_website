@@ -2,8 +2,8 @@
 
 Built with Bulma and Jekyll.
 
-http://ramwebsite.surge.sh/
+http://ram.umd.edu/
 
-## Wait, where's the website?
+Please read [documentation](documentation.md) before working on the website.
 
-Inside `_site/`
+Contact [Omkar](https://github.com/konaraddio) if there are any questions or clarifications needed.

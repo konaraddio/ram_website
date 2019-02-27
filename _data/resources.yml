@@ -1,46 +1,36 @@
 # Mechanical resources listings
 
-- title: Get Started Guide
-  link: https://drive.google.com/open?id=1ag0AxYLVAucUAW1zOA3vkjYywwwXdUKqWIWCY7Xe_2A
-  description: This is the 2017 Get Started Guide, with a brief intro to Robosub competition, our robot, and instructions to sign up for the services we use. 
-  categories: [New Members, Mechanical]
-
 - title: Mechanical Training Checklist
   link: https://drive.google.com/file/d/0Bw5tQGz11MUuZEg0UEs0N1RFUHc/view?usp=sharing
   description: This checklist is for you to complete and to keep track of skills you have acquired.
   categories: [New Members, Mechanical]
-
-- title: Robosub 2017 Game Rules
-  link: http://www.robonation.org/sites/default/files/RoboSub_2017_Final_Mission_v2_5-2.pdf
-  description: Robosub 2017 finalized rules. The rules changes very little from year to year.
-  categories: [New Members, Mechanical]
  
-- title: GrabCAD workbench
+- title: GrabCAD Workbench
   link: https://grabcad.com/workbench
   description: GrabCAD is the product lifecycle management (PLM) software we use. We upload, store, and share CAD files here. The workbench works with all types of CAD files, allowing you the flexibility to work on the CAD program you are most familiar with.
   categories: [Mechanical, Design]
 
-- title: Intro to machining
+- title: Intro to Machining
   link: https://docs.google.com/document/d/1b_oASzht77SJbULa9-KxqbgcZeAAQ97IRJ160zzNg2I/edit?usp=sharing
   description: This is a quick intro to machining and how to design for fabrication.
   categories: [Mechanical, Design]
 
-- title: Apple rubber o-ring guide
+- title: Apple Rubber O-Ring Guide
   link: http://www.applerubber.com/src/pdf/seal-design-guide.pdf
   description: Apple rubber O-ring seal design guide is a good start in learning about several types of O-ring seals and general procedures O-ring groove design.
   categories: [Mechanical, Design, O-ring]
 
-- title: Parker handbook
+- title: Parker Handbook
   link: https://www.parker.com/literature/ORD%205700%20Parker_O-Ring_Handbook.pdf
   description: Parker handbook has been the go-to reference material for industrial O-ring design. It covers O-ring seal theory, how they fail, and material selection. Don’t simply take groove dimensions from their table, instead, calculate and verify them yourselves.
   categories: [Mechanical, Design, O-ring]
 
-- title: Simple pressure hull tutorial
+- title: Simple Pressure Hull Tutorial
   link: https://drive.google.com/open?id=0Bw5tQGz11MUuLTdiZnpBRFpSbmM
   description: Steps to create a simple, watertight, pressure hull with two endcaps.
   categories: [Mechanical, Design, O-ring]
 
-- title: Simple pressure hull drawing
+- title: Simple Pressure Hull Drawing
   link: https://drive.google.com/file/d/0Bw5tQGz11MUuU0hhc2VDOThTSE0/view?usp=sharing
   description: Sample design paper for pressure hull, endcap, and O-ring groove design.
   categories: [Mechanical, Design, O-ring]
@@ -50,7 +40,7 @@
   description: Basics of fastener types and features. The standard bolt we use is 10-32 socket head screw for exterior, and 4-40 socket head screw for interior of pressure hulls.
   categories: [Mechanical, Design, Fastener]
 
-- title: NASA fastener design guide
+- title: NASA Fastener Design Guide
   link: https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19900009424.pdf
   description: This comprehensive guide from NASA details how to property design fastener components, install them, corrosions, failures, installation torques, and fatigue calculations.
   categories: [Mechanical, Design, Fastener]
@@ -100,11 +90,22 @@
   description: We use the innovation center for most 3D print prototyping job. They charge $0.10 per gram and has more enough printer to ensure a quick turnout time. This means we can quickly print a placeholder and use it on robot before the actual part is fabricated.
   categories: [Mechanical, Services]
 
-- title: ME machine shop 
+- title: ME Machine Shop 
   link: http://www.pirls.umd.edu/facilities/#designme
   description: ME machine shop, located at the basement of Glenn L Martin building, is the primary placed where we machine components for our robot. It’s a complete machine shop with manual lathe, manual mill, laser cutter, saws, and all tools we need. The shop opens M-F from 8AM – 6PM.
   categories: [Mechanical, Services]
 
-- title: SSL Machine shop
+- title: SSL Machine Shop
+  link: https://ssl.umd.edu
   description: Located on the first floor of NBRF, SSL machine shop is a convenient place to machine raw materials. Anyone wish to use the shop must go through an orientation with SSL and ask for permission every time.
   categories: [Mechanical, Services]
+
+- title: R@M on Github 
+  link: https://github.com/robotics-at-maryland
+  description: Our software is located on Github.
+  categories: [Software]
+
+- title: R@M Wiki Page
+  link: https://github.com/robotics-at-maryland/ram_website.git
+  description: Our wiki page with resources on how to get started with catkin, ROS, and Git.
+  categories: [Software, New Members]

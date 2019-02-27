@@ -2,8 +2,8 @@
 layout: default
 title: Qubo from R@M
 tagname: qubo
-currenttab: robots-tab
-description: Learn more about Qubo, a robot from R@M
+currenttab: blogs-tab
+description: Read our blogs at R@M
 jquery: false
 ---
 
@@ -12,14 +12,15 @@ jquery: false
         <div class="container">
             <div class="content is-medium">
                 <h1>Recent Blogs</h1>
-                {% for post in site.posts %}
-                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                <h6>{{ post.date | date: site.date_format }}</h6>
-                <p>{{ post.excerpt }}</p>
-                <hr>
-                {% endfor %}
+                <section class="blog-list">
+                    {% for post in site.posts %}
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    <h6>{{ post.date | date: site.date_format }}</h6>
+                    <p>{{ post.excerpt }} <a href="{{ post.url }}">Read More</a></p>
+                    <hr>
+                    {% endfor %}
+                </section>
             </div>
-        </div>
         </div>
     </div>
 </section> 

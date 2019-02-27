@@ -110,7 +110,7 @@ html, body{
     }
 }
 
-@import "landing_page.scss";
+@import "landing_page";
 
 #sponsors-page{
     a{
@@ -119,23 +119,7 @@ html, body{
 }
 
 #robots-page{
-
-    #qubo-image{
-        background-image: url("../assets/qubo_robot.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-    }
-    #tortuga-image{
-        background-image: url("../assets/tortuga_robot.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-    }
-    .button{
-        width: 100%;
-        min-height: 128px;
-    }
+    @import "robots_page";
 }
 
 #qubo-page{
@@ -160,47 +144,13 @@ html, body{
 
 /*The below is for the Resources Page only*/
 #resources-page {
-
-    a{
-        font-family: $family-secondary;
-    }
-
-    .columns{
-        padding: 32px;
-
-        @include mobile{
-            padding: 4px;
-        }
-
-        #resource-cards{
-            #category-tags{
-                span.tag{
-                    margin-left: 8px;
-                }
-            }
-        }
-
-        .resource-card{
-
-            .title, .subtitle, p, blockquote, span{
-                font-family: $family-secondary;
-            }
-
-            margin: 32px;
-
-            @include mobile{
-                margin: 4px;
-                margin-top: 16px;
-            }
-
-        }
-
-    }
-
-    #category-tags span{
-        margin-bottom: 5px;
-    }
-
+    @import "resources_page";
 }
 
 @import "post";
+
+.blog-list{
+    img{
+        width: 100%;
+    }
+}

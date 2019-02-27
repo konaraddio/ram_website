@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta charset="utf-8"> 
     <title>Qubo from R@M</title>
 
     <!--Linking the css file (generated using sass and Bulma)-->
@@ -11,7 +11,7 @@
     <meta name="theme-color" content="#EF4836" />
     <!--To control layout on mobile browsers-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Learn more about Qubo, a robot from R@M" />
+    <meta name="description" content="Read our blogs at R@M" />
     <!--Google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500|Open+Sans">
 
@@ -42,7 +42,8 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
     <a id="home-tab" href="/index.html" class="nav-item is-tab">Home</a>
     <a id="sponsors-tab" href="/html/sponsors_page.html" class="nav-item is-tab">Sponsor</a>
     <a id="robots-tab" href="/html/robots_page.html" class="nav-item is-tab">Robots</a>
-    <a id="robots-tab" href="/html/resources_page.html" class="nav-item is-tab">Resources</a>
+    <a id="resources-tab" href="/html/resources_page.html" class="nav-item is-tab">Resources</a>
+    <a id="blogs-tab" href="/html/blogs.html" class="nav-item is-tab">Blogs</a>
 </div>
 
 <span id="nav-toggle" class="nav-toggle">
@@ -74,7 +75,7 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
 
     </nav>
     <script>
-        document.getElementById('robots-tab').classList += " is-active";                
+        document.getElementById('blogs-tab').classList += " is-active";                
     </script>
 
     <!--This is for everything inside the Landing Page, excluding the navbar & footer-->
@@ -85,16 +86,19 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
         <div class="container">
             <div class="content is-medium">
                 <h1>Recent Blogs</h1>
-                
-                <h3><a href="/2012/12/12/example-post.html">Example Jekyll Post</a></h3>
-                <h6>Dec 12, 2012</h6>
-                <p><p>Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum.</p>
+                <section class="blog-list">
+                    
+                    <h3><a href="/2017/08/28/robosub-2017.html">RoboSub 2017</a></h3>
+                    <h6>Aug 28, 2017</h6>
+                    <p><p><img src="/assets/posts/robosub2017.jpg" alt="(Picture of team working on Qubo)" /></p>
 
-</p>
-                <hr>
-                
+<p>After spending a few years in design, Robotics @ Maryland’s new robot, Qubo, made it to competition! With the robot and all our gear packed up, the team flew out to San Diego, California, to compete in the 20th annual RoboSub competition.</p>
+
+ <a href="/2017/08/28/robosub-2017.html">Read More</a></p>
+                    <hr>
+                    
+                </section>
             </div>
-        </div>
         </div>
     </div>
 </section> 
@@ -114,9 +118,6 @@ This is loaded into the <nav></nav> on each html page requiring a navigation bar
             </p>
             <p class="subtitle is-6">
                 Contact Us: <a href="mailto:software@ram.umd.edu" target="_blank" rel="noreferrer noopener">software@ram.umd.edu</a>
-            </p>
-            <p class="subtitle is-6">
-                Built by <a href="//konaraddio.github.io" target="_blank" rel="noreferrer noopener">Omkar Konaraddi</a>
             </p>
         </div>
     </div>
