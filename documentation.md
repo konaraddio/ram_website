@@ -30,4 +30,7 @@ When including an image in a blog, place the image in `assets/posts/`. When refe
 This website is using [Bulma](http://bulma.io) 0.4.2, this is a CSS framework. Read up on Sass at [marksheet.io](http://marksheet.io/) and the [Sass docs](http://sass-lang.com/). If you add a Sass file to `_sass/`, don't forget to import that file in the `styles.scss` file too. This keeps our CSS organized and concatentated into a single file in the end.
 
 ## Updating the site on the server
-`ssh` into the server, then `cd` your way into the folder containing the website. At the root of the website's folder, there is a script called `update.sh`. Executing the script will update the website with what's on the master branch of this github repository.
+### Pushing updates to git
+Make sure you've run `jekyll build` with your new changes in your local copy of the website. Once you've tested your changes with `jekyll serve`, go ahead and push your changes, including all of the jekyll build artifacts.
+### Running updates on the website 
+`ssh` into the server, then `cd` your way into the folder containing the website (most likely in /var/www or similar). At the root of the website's folder, there is a script called `update.sh`. Executing the script will update the website with what's on the master branch of this github repository.
